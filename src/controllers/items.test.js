@@ -16,4 +16,12 @@ describe('Items Report', () => {
     // Act & Assert
     expect(() => generateReport(sales)).toThrow('Sales must be an array')
   })
+
+  it('should return 0 if sales list is empty', () => {
+    // Arrange
+    const sales = []
+
+    // Act & Assert
+    expect(generateReport(sales)).toBe(0)
+  })
 })
