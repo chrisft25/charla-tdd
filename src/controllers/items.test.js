@@ -38,4 +38,23 @@ describe('Items Report', () => {
     // Act & Assert
     expect(generateReport(sales)).toBe(10)
   })
+
+  it('should return 200 if a list with multiple items and quantities are provided', () => {
+    // Arrange
+    const sales = [
+      {
+        productName: 'Baleada',
+        quantity: 5,
+        price: 10
+      },
+      {
+        productName: 'Pupusas',
+        quantity: 10,
+        price: 15
+      }
+    ]
+
+    // Act & Assert
+    expect(generateReport(sales)).toBe(200)
+  })
 })
