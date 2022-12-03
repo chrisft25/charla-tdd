@@ -5,12 +5,10 @@ module.exports = {
     jest: true
   },
   extends: 'standard',
-  overrides: [
-  ],
+  overrides: [],
   parserOptions: {
     ecmaVersion: 'latest',
     sourceType: 'module'
   },
-  rules: {
-  }
+  rules: {}
 }
