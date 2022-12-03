@@ -6,6 +6,6 @@ describe('Items Report', () => {
   })
 
   it('should throw an error if sales list is not provided', () => {
-    expect(() => generateReport()).toThrow()
+    expect(() => generateReport()).toThrow('Sales must be provided')
   })
 })
